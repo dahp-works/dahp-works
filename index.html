@@ -52,14 +52,16 @@
                     <span class="text-[10px] uppercase tracking-widest text-slate-400 font-medium" data-es="Creative Studio" data-en="Creative Studio">Creative Studio</span>
                 </div>
             </div>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
                 <a href="#servicios" class="hover:text-white transition" data-es="Servicios" data-en="Services">Servicios</a>
-                <a href="#ecosistema" class="hover:text-white transition" data-es="Portafolio & Redes" data-en="Portfolio & Links">Portafolio & Redes</a>
+                <a href="#proyectos" class="hover:text-white transition" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="#ecosistema" class="hover:text-white transition" data-es="Redes" data-en="Links">Redes</a>
+                <a href="#faq" class="hover:text-white transition" data-es="FAQ" data-en="FAQ">FAQ</a>
                 <!-- Selector de Idioma -->
                 <button onclick="toggleLanguage()" id="lang-btn" class="bg-white/10 border border-white/20 text-white px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-white/20 transition">
                     EN / ES
                 </button>
-                <a href="#contacto" class="bg-white text-black font-semibold px-5 py-2.5 rounded-full hover:bg-slate-200 transition shadow-sm" data-es="Contacto" data-en="Contact">Contacto Directo</a>
+                <a href="#contacto" class="bg-white text-black font-semibold px-5 py-2.5 rounded-full hover:bg-slate-200 transition shadow-sm" data-es="Contacto" data-en="Contact">Contacto</a>
             </nav>
         </div>
     </header>
@@ -80,11 +82,11 @@
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-            <a href="#servicios" class="bg-white text-black font-semibold px-8 py-4 rounded-xl hover:bg-slate-200 transition text-center shadow-lg" data-es="Explorar Servicios" data-en="Explore Services">
-                Explorar Servicios
+            <a href="#contacto" class="bg-white text-black font-semibold px-8 py-4 rounded-xl hover:bg-slate-200 transition text-center shadow-lg" data-es="Solicitar Cotización" data-en="Request Quote">
+                Solicitar Cotización
             </a>
-            <a href="#ecosistema" class="bg-cardbg silver-border text-white font-medium px-8 py-4 rounded-xl hover:bg-white/5 transition text-center" data-es="Ver Trabajos y Enlaces" data-en="View Work & Links">
-                Ver Trabajos y Enlaces
+            <a href="#proyectos" class="bg-cardbg silver-border text-white font-medium px-8 py-4 rounded-xl hover:bg-white/5 transition text-center" data-es="Ver Portafolio" data-en="View Portfolio">
+                Ver Portafolio
             </a>
         </div>
     </section>
@@ -97,28 +99,24 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Servicio 1 -->
             <div class="bg-cardbg silver-border p-8 rounded-2xl transition duration-300 group">
                 <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition">💻</div>
                 <h3 class="text-xl font-bold mb-3" data-es="Páginas Web" data-en="Websites">Páginas Web</h3>
                 <p class="text-slate-400 text-sm leading-relaxed" data-es="Desarrollo frontend moderno, páginas de aterrizaje veloces y experiencias web a la medida." data-en="Modern frontend development, fast landing pages, and custom web experiences.">Desarrollo frontend moderno, páginas de aterrizaje veloces y experiencias web a la medida.</p>
             </div>
 
-            <!-- Servicio 2 -->
             <div class="bg-cardbg silver-border p-8 rounded-2xl transition duration-300 group">
                 <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition">🤖</div>
                 <h3 class="text-xl font-bold mb-3" data-es="Videos con IA" data-en="AI Videos">Videos con IA</h3>
                 <p class="text-slate-400 text-sm leading-relaxed" data-es="Producción de contenido audiovisual dinámico, animación 3D y cortometrajes generativos para marcas." data-en="Dynamic audiovisual content production, 3D animation, and generative short films for brands.">Producción de contenido audiovisual dinámico, animación 3D y cortometrajes generativos para marcas.</p>
             </div>
 
-            <!-- Servicio 3 -->
             <div class="bg-cardbg silver-border p-8 rounded-2xl transition duration-300 group">
                 <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition">📚</div>
                 <h3 class="text-xl font-bold mb-3" data-es="Creación de E-books" data-en="E-books Creation">Creación de E-books</h3>
                 <p class="text-slate-400 text-sm leading-relaxed" data-es="Redacción de infoproductos, manuales técnicos de optimización y guías de alto valor comercial." data-en="Infoproduct copywriting, technical optimization manuals, and high commercial value guides.">Redacción de infoproductos, manuales técnicos de optimización y guías de alto valor comercial.</p>
             </div>
 
-            <!-- Servicio 4 -->
             <div class="bg-cardbg silver-border p-8 rounded-2xl transition duration-300 group">
                 <div class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition">⚡</div>
                 <h3 class="text-xl font-bold mb-3" data-es="Optimización de PC" data-en="PC Optimization">Optimización de PC</h3>
@@ -127,15 +125,91 @@
         </div>
     </section>
 
+    <!-- Proyectos Destacados (Galería) -->
+    <section id="proyectos" class="py-24 px-6 max-w-7xl mx-auto border-t border-bordercolor">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+            <p class="text-slate-400" data-es="Una muestra del trabajo creativo y técnico desarrollado bajo DAHP WORKS." data-en="A showcase of creative and technical work developed under DAHP WORKS.">Una muestra del trabajo creativo y técnico desarrollado bajo DAHP WORKS.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-cardbg silver-border rounded-2xl overflow-hidden group">
+                <div class="h-48 bg-gradient-to-br from-slate-900 to-slate-800 border-b border-bordercolor flex items-center justify-center p-6 text-center">
+                    <span class="font-heading font-bold text-xl text-white tracking-widest">TROPIEZO TOONS</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold" data-es="Animación 3D & Contenido" data-en="3D Animation & Content">Animación 3D & Contenido</span>
+                    <h3 class="text-lg font-bold mt-1 mb-2">Producción de Cortos Animados</h3>
+                    <p class="text-slate-400 text-sm" data-es="Creación de historias cortas en animación 3D con personajes icónicos enfocadas en retención digital." data-en="Creation of short 3D animation stories with iconic characters focused on digital retention.">Creación de historias cortas en animación 3D con personajes icónicos enfocadas en retención digital.</p>
+                </div>
+            </div>
+
+            <div class="bg-cardbg silver-border rounded-2xl overflow-hidden group">
+                <div class="h-48 bg-gradient-to-br from-slate-900 to-slate-800 border-b border-bordercolor flex items-center justify-center p-6 text-center">
+                    <span class="font-heading font-bold text-xl text-white tracking-widest">PC VELOZ</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold" data-es="Infoproducto / E-book" data-en="Infoproduct / E-book">Infoproducto / E-book</span>
+                    <h3 class="text-lg font-bold mt-1 mb-2">Manuales de Optimización</h3>
+                    <p class="text-slate-400 text-sm" data-es="Guías definitivas diseñadas para exprimir el rendimiento de hardware limitado y sistemas operativos." data-en="Definitive guides designed to squeeze performance out of limited hardware and operating systems.">Guías definitivas diseñadas para exprimir el rendimiento de hardware limitado y sistemas operativos.</p>
+                </div>
+            </div>
+
+            <div class="bg-cardbg silver-border rounded-2xl overflow-hidden group">
+                <div class="h-48 bg-gradient-to-br from-slate-900 to-slate-800 border-b border-bordercolor flex items-center justify-center p-6 text-center">
+                    <span class="font-heading font-bold text-xl text-white tracking-widest">FRONTEND LAB</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold" data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</span>
+                    <h3 class="text-lg font-bold mt-1 mb-2">Landings de Alta Conversión</h3>
+                    <p class="text-slate-400 text-sm" data-es="Interfaces web ultrarrápidas, responsivas y optimizadas con código limpio y moderno." data-en="Ultrafast, responsive, and optimized web interfaces with clean, modern code.">Interfaces web ultrarrápidas, responsivas y optimizadas con código limpio y moderno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios / Social Proof -->
+    <section class="py-24 px-6 max-w-7xl mx-auto border-t border-bordercolor">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-es="Lo que dicen los clientes" data-en="Client Testimonials">Lo que dicen los clientes</h2>
+            <p class="text-slate-400" data-es="Compromiso, velocidad y calidad técnica respaldada por quienes han confiado en nuestros servicios." data-en="Commitment, speed, and technical quality backed by those who have trusted our services.">Compromiso, velocidad y calidad técnica respaldada por quienes han confiado en nuestros servicios.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-cardbg silver-border p-8 rounded-2xl relative">
+                <div class="text-slate-500 text-4xl font-serif mb-4">“</div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6" data-es="La landing page superó por completo mis expectativas. Carga instantáneamente y el diseño profesional le dio una autoridad increíble a mi marca." data-en="The landing page completely exceeded my expectations. It loads instantly and the professional design gave incredible authority to my brand.">La landing page superó por completo mis expectativas. Carga instantáneamente y el diseño profesional le dio una autoridad increíble a mi marca.</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-xs">CL</div>
+                    <div>
+                        <h4 class="font-semibold text-sm text-white">Cliente Verificado</h4>
+                        <span class="text-xs text-slate-400" data-es="Proyecto de Desarrollo Web" data-en="Web Development Project">Proyecto de Desarrollo Web</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cardbg silver-border p-8 rounded-2xl relative">
+                <div class="text-slate-500 text-4xl font-serif mb-4">“</div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6" data-es="El servicio de optimización de PC y los manuales digitales son una joya. Resolvió mis cuellos de botella técnicos de inmediato y con una atención impecable." data-en="The PC optimization service and digital manuals are a gem. It solved my technical bottlenecks immediately and with impeccable support.">El servicio de optimización de PC y los manuales digitales son una joya. Resolvió mis cuellos de botella técnicos de inmediato y con una atención impecable.</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-xs">OP</div>
+                    <div>
+                        <h4 class="font-semibold text-sm text-white">Emprendedor Digital</h4>
+                        <span class="text-xs text-slate-400" data-es="Optimización & Soporte" data-en="Optimization & Support">Optimización & Soporte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Ecosistema / Enlaces Profesionales -->
     <section id="ecosistema" class="py-24 px-6 max-w-7xl mx-auto border-t border-bordercolor">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-es="Ecosistema & Plataformas" data-en="Ecosystem & Platforms">Ecosistema & Plataformas</h2>
-            <p class="text-slate-400" data-es="Conoce mis proyectos activos, infoproductos y perfiles profesionales en la web." data-en="Explore my active projects, infoproducts, and professional web profiles.">Conoce mis proyectos activos, infoproductos y perfiles profesionales en la web.</p>
+            <p class="text-slate-400" data-es="Explora mis proyectos activos, infoproductos y perfiles profesionales en la web." data-en="Explore my active projects, infoproducts, and professional web profiles.">Explora mis proyectos activos, infoproductos y perfiles profesionales en la web.</p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <!-- Fiverr -->
             <a href="https://es.fiverr.com/s/gvv78Eo" target="_blank" class="bg-cardbg silver-border p-6 rounded-2xl flex items-center justify-between group hover:bg-white/[0.02] transition">
                 <div class="flex items-center space-x-4">
                     <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold">Fi</div>
@@ -147,7 +221,6 @@
                 <span class="text-slate-500 group-hover:translate-x-1 transition">↗</span>
             </a>
 
-            <!-- Hotmart -->
             <a href="https://go.hotmart.com/X108223489K" target="_blank" class="bg-cardbg silver-border p-6 rounded-2xl flex items-center justify-between group hover:bg-white/[0.02] transition">
                 <div class="flex items-center space-x-4">
                     <div class="w-10 h-10 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-bold">Hm</div>
@@ -159,7 +232,6 @@
                 <span class="text-slate-500 group-hover:translate-x-1 transition">↗</span>
             </a>
 
-            <!-- LinkedIn -->
             <a href="https://www.linkedin.com/in/andres-hernandez-dahp" target="_blank" class="bg-cardbg silver-border p-6 rounded-2xl flex items-center justify-between group hover:bg-white/[0.02] transition">
                 <div class="flex items-center space-x-4">
                     <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold">In</div>
@@ -171,7 +243,6 @@
                 <span class="text-slate-500 group-hover:translate-x-1 transition">↗</span>
             </a>
 
-            <!-- TikTok -->
             <a href="https://www.tiktok.com/@tropiezo_toons?_r=1&_t=ZS-9AvIkOivb0e" target="_blank" class="bg-cardbg silver-border p-6 rounded-2xl flex items-center justify-between group hover:bg-white/[0.02] transition">
                 <div class="flex items-center space-x-4">
                     <div class="w-10 h-10 rounded-lg bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 font-bold">Tk</div>
@@ -183,7 +254,6 @@
                 <span class="text-slate-500 group-hover:translate-x-1 transition">↗</span>
             </a>
 
-            <!-- X -->
             <a href="https://x.com/DAHP_EWC" target="_blank" class="bg-cardbg silver-border p-6 rounded-2xl flex items-center justify-between group hover:bg-white/[0.02] transition sm:col-span-2 lg:col-span-1">
                 <div class="flex items-center space-x-4">
                     <div class="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-white font-bold">𝕏</div>
@@ -197,15 +267,80 @@
         </div>
     </section>
 
-    <!-- Contacto Section -->
-    <section id="contacto" class="py-24 px-6 max-w-4xl mx-auto text-center border-t border-bordercolor">
-        <div class="bg-cardbg silver-border p-12 rounded-3xl relative overflow-hidden">
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="py-24 px-6 max-w-4xl mx-auto border-t border-bordercolor">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-es="Preguntas Frecuentes" data-en="Frequently Asked Questions">Preguntas Frecuentes</h2>
+            <p class="text-slate-400" data-es="Resolvemos tus dudas principales sobre contratación y tiempos de entrega." data-en="We answer your main questions regarding hiring and delivery times.">Resolvemos tus dudas principales sobre contratación y tiempos de entrega.</p>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-cardbg silver-border rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-6 text-left font-semibold flex justify-between items-center text-white focus:outline-none">
+                    <span data-es="¿Cuánto tiempo toma desarrollar una landing page?" data-en="How long does it take to develop a landing page?">¿Cuánto tiempo toma desarrollar una landing page?</span>
+                    <span class="transform transition-transform duration-300">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed" data-es="Por lo general, las landing pages profesionales se entregan listas y optimizadas en un rango de 3 a 5 días hábiles, dependiendo de los requerimientos específicos." data-en="Generally, professional landing pages are delivered ready and optimized within 3 to 5 business days, depending on specific requirements.">
+                    Por lo general, las landing pages profesionales se entregan listas y optimizadas en un rango de 3 a 5 días hábiles, dependiendo de los requerimientos específicos.
+                </div>
+            </div>
+
+            <div class="bg-cardbg silver-border rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-6 text-left font-semibold flex justify-between items-center text-white focus:outline-none">
+                    <span data-es="¿Cómo funcionan las asesorías y entrega de E-books?" data-en="How do consultations and E-book delivery work?">¿Cómo funcionan las asesorías y entrega de E-books?</span>
+                    <span class="transform transition-transform duration-300">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed" data-es="Los infoproductos y guías se adquieren de forma directa y automatizada a través de nuestra plataforma asociada en Hotmart con acceso inmediato." data-en="Infoproducts and guides are purchased directly and automatically through our associated platform on Hotmart with immediate access.">
+                    Los infoproductos y guías se adquieren de forma directa y automatizada a través de nuestra plataforma asociada en Hotmart con acceso inmediato.
+                </div>
+            </div>
+
+            <div class="bg-cardbg silver-border rounded-xl overflow-hidden">
+                <button onclick="toggleFaq(this)" class="w-full p-6 text-left font-semibold flex justify-between items-center text-white focus:outline-none">
+                    <span data-es="¿Cuáles son los métodos de pago aceptados?" data-en="What are the accepted payment methods?">¿Cuáles son los métodos de pago aceptados?</span>
+                    <span class="transform transition-transform duration-300">▼</span>
+                </button>
+                <div class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed" data-es="Para servicios personalizados y desarrollo freelance trabajamos a través de pasarelas seguras y plataformas como Fiverr." data-en="For customized services and freelance development, we work through secure gateways and platforms like Fiverr.">
+                    Para servicios personalizados y desarrollo freelance trabajamos a través de pasarelas seguras y plataformas como Fiverr.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section con Formulario -->
+    <section id="contacto" class="py-24 px-6 max-w-3xl mx-auto border-t border-bordercolor">
+        <div class="bg-cardbg silver-border p-8 md:p-12 rounded-3xl relative overflow-hidden">
             <div class="absolute -top-24 -left-24 w-48 h-48 bg-slate-700/10 rounded-full blur-3xl"></div>
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-es="¿Listo para comenzar tu próximo proyecto?" data-en="Ready to start your next project?">¿Listo para comenzar tu próximo proyecto?</h2>
-            <p class="text-slate-400 mb-8 max-w-xl mx-auto" data-es="Hablemos sobre cómo llevar tus ideas al siguiente nivel con calidad profesional y entrega rápida." data-en="Let's talk about how to take your ideas to the next level with professional quality and fast delivery.">Hablemos sobre cómo llevar tus ideas al siguiente nivel con calidad profesional y entrega rápida.</p>
-            <a href="mailto:dahp.business.contact@gmail.com" class="inline-block bg-white text-black font-bold px-8 py-4 rounded-xl hover:bg-slate-200 transition text-lg shadow-xl">
-                dahp.business.contact@gmail.com
-            </a>
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4" data-es="Hablemos de tu Proyecto" data-en="Let's Talk About Your Project">Hablemos de tu Proyecto</h2>
+                <p class="text-slate-400 text-sm" data-es="Escríbenos directamente o envíanos un mensaje y te responderemos a la brevedad." data-en="Write to us directly or send a message and we will get back to you shortly.">Escríbenos directamente o envíanos un mensaje y te responderemos a la brevedad.</p>
+            </div>
+
+            <!-- Formulario conectado a Formspree (reemplaza YOUR_FORM_ID con tu endpoint gratuito si deseas) -->
+            <form action="https://formspree.io/f/xlgppvqa" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2" data-es="Tu Nombre o Empresa" data-en="Your Name or Company">Tu Nombre o Empresa</label>
+                    <input type="text" name="name" required class="w-full bg-darkbg border border-bordercolor rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white transition text-sm" placeholder="Ej. Juan Pérez">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2" data-es="Correo Electrónico" data-en="Email Address">Correo Electrónico</label>
+                    <input type="email" name="email" required class="w-full bg-darkbg border border-bordercolor rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white transition text-sm" placeholder="tu@correo.com">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2" data-es="Mensaje o Requerimiento" data-en="Message or Requirement">Mensaje o Requerimiento</label>
+                    <textarea name="message" rows="4" required class="w-full bg-darkbg border border-bordercolor rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white transition text-sm" placeholder="Cuéntanos sobre tu idea..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-xl hover:bg-slate-200 transition text-base shadow-xl" data-es="Enviar Mensaje" data-en="Send Message">
+                    Enviar Mensaje
+                </button>
+            </form>
+
+            <div class="mt-8 text-center border-t border-bordercolor pt-6">
+                <span class="text-xs text-slate-400 block mb-2" data-es="O contáctanos directamente a:" data-en="Or contact us directly at:">O contáctanos directamente a:</span>
+                <a href="mailto:dahp.business.contact@gmail.com" class="text-white font-semibold hover:underline text-sm">
+                    dahp.business.contact@gmail.com
+                </a>
+            </div>
         </div>
     </section>
 
@@ -217,7 +352,7 @@
         </div>
     </footer>
 
-    <!-- Script de Traducción Dinámica -->
+    <!-- Scripts de Interactividad y Traducción -->
     <script>
         let currentLang = 'es';
         function toggleLanguage() {
@@ -227,6 +362,13 @@
             document.querySelectorAll('[data-es]').forEach(el => {
                 el.innerText = el.getAttribute(`data-${currentLang}`);
             });
+        }
+
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const arrow = button.querySelector('span:last-child');
+            content.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
         }
     </script>
 
